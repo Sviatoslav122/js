@@ -28,8 +28,7 @@ let users = [
 ];
 for (let i = 0; i < 10; i++) {
     const user = users[i];
-    document.write(`<div> Text ${user.name}
-    </div>`)
+    document.write(`<div> Text ${user.name}  ${i} </div>`)
 
 }
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині
@@ -69,7 +68,7 @@ let imena = [
 let i1 = 0;
 while (i1 < 20) {
     let userText = imena[i1];
-    document.write(`<h1>text ${userText.name} </h1>`);
+    document.write(`<h1>text  ${userText.name} ${i1} </h1>`);
     i1++;
 
 }
@@ -81,8 +80,7 @@ let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'an
 
 for (const listOfItem of listOfItems) {
     document.write(`<ul>`)
-    for (const listOfItemElement of listOfItem)
-        document.write(`<li>${listOfItemElement}</li>`)
+        document.write(`<li>${listOfItem}</li>`)
 
 
     document.write(`</ul>`)
@@ -192,11 +190,13 @@ document.write("----------------------------------------------------")
 for (i = 0 ; i < users5.length ; i++){
     const chyslo  = users5[i];
     if (chyslo.age > 30){
-        for (const chyslo2 in chyslo) {
+        for (const chysloElement of chyslo) {
             document.write(`<div>`)
-            document.write(`${chyslo2} - ${chyslo[chyslo2]}`)
+            document.write(`${chysloElement} - ${chyslo[chysloElement]}`)
             document.write(`</div>`)
         }
+
+
 
     }
 }
