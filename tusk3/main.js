@@ -163,43 +163,28 @@ let users5 = [
     {name: 'olya', age: 31, status: false},
     {name: 'max', age: 31, status: true}
 ]
-for (i = 0 ; i < users5.length ; i++){
-  const users5Element  = users5[i];
-    if (users5Element.status === true){
-        for (const users5ElementKey in users5Element) {
-            document.write(`<div>`)
-            document.write(`${users5ElementKey} - ${users5Element[users5ElementKey]}`)
-            document.write(`</div>`)
-        }
+for (i = 0 ; i < users5.length ; i++) {
+    const users5Element = users5[i];
+    if (users5Element.status === true) {
+        console.log(users5Element, users5[users5Element])
 
     }
 }
-document.write("----------------------------------------------------")
+    console.log("----------------------------------------------------")
 for (i = 0 ; i < users5.length ; i++){
     const users5Elementfalse  = users5[i];
     if (users5Elementfalse.status === false){
-        for (const users5ElementKey2 in users5Elementfalse) {
-            document.write(`<div>`)
-            document.write(`${users5ElementKey2} - ${users5Elementfalse[users5ElementKey2]}`)
-            document.write(`</div>`)
-        }
-
+        console.log(users5Elementfalse , users5[users5Elementfalse])
     }
 }
-document.write("----------------------------------------------------")
+    console.log("----------------------------------------------------")
 for (i = 0 ; i < users5.length ; i++){
-    const chyslo  = users5[i];
-    if (chyslo.age > 30){
-        for (const chysloElement of chyslo) {
-            document.write(`<div>`)
-            document.write(`${chysloElement} - ${chyslo[chysloElement]}`)
-            document.write(`</div>`)
-        }
-
-
-
+    const chyslo = users5[i];
+    if (chyslo.age > 30) {
+        console.log(chyslo, users5[chyslo])
     }
 }
+
 // console.log(`${users2Element.name}`);
 
 //     - користувачів зі статусом true
