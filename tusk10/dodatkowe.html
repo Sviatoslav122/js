@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<form action="">
+    <div class="menu">
+        <div class="topMenu">
+  <label for="lenghtSt">
+    <input type="number" id="lenghtSt" name="strLenght" class="style" placeholder="lenght Strindg">
+  </label>
+  <label for="lenghtsPunkt">
+    <input type="number" id="lenghtsPunkt" name="punktLenght" class="style" placeholder="lehnght Punkts">
+  </label>
+  <label for="inTable">
+    <input type="text" id="inTable" name="tableIn" class="style" placeholder="filler">
+  </label>
+
+        </div>
+        <div class="boMenu">
+  <input type="button" value="Створити таблицю" onclick="createTable()" class="onstyle">
+        </div>
+    </div>
+
+<div id="containertable"></div>
+
+
+</form>
+
+
+<body>
+<script src="main.js"></script>
+</body>
+</html>

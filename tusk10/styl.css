@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+background-color: grey;
+}
+
+.menu{
+    margin-left: 500px;
+    width: 450px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+background-color: darkslategray;
+    border-radius: 20%;
+    margin-bottom: 20px;
+}
+.style{
+    width: 120px;
+    height: 40px;
+    background-color: whitesmoke;
+    border: solid black 1px;
+    border-radius: 10%;
+
+
+}
+.topMenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 450px;
+}
+.boMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+}
+.onstyle{
+
+    background-color: green;
+    width: 150px;
+    height: 40px;
+}
+
+table{
+    border: dotted black 2px;
+}
+tr{
+    background-color: darkslategray;
+    border: dashed black;
+}
